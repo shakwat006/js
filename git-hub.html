@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gihub delete</title>
+</head>
+<body>
+    <h1 id="info">my secrete info</h1>
+    <input id="text-id" type="text" placeholder="place type delete">
+    <button id="delete" disabled>delete</button>
+    <script>
+        document.getElementById('text-id').addEventListener('keyup', function(event){
+            const text = event.target.value;
+            const deletebtn = document.getElementById('delete')
+            if(text === 'delete') {
+                deletebtn.removeAttribute('disabled')
+            }
+            else{
+                deletebtn.setAttribute('disabled',true)
+            }
+           
+
+        })
+        document.getElementById('delete').addEventListener('click', function (){
+            const sInfo= document.getElementById('info')
+            sInfo.style.display= 'none';
+            
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>handle even</h1>
+    <!-- <p id="ajaira">ajaira kotha</p> -->
+    <p id="fainal">fainal work</p>
+    <input id="input-filed" type="text">
+    <button id="update">update</button>
+    <br>
+    <br>
+
+    <!-- <button onclick="maroClick()">maro click</button>
+    <button id="option2">click me on the time</button> -->
+
+
+
+    <script src="even/new-even.js"></script>
+    <script>
+        document.getElementById('update').addEventListener('click',function(){
+            const inputFiled = document.getElementById('input-filed')
+            const work =inputFiled.value;
+
+            const bara= document.getElementById('fainal')
+            bara.innerText= work
+            inputFiled.value = '';
+        })
+        
+        
+    </script>
+</body>
+</html>

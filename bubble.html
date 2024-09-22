@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>explore eventr by bubble</title>
+</head>
+<body>
+    <section id="section">
+        <h1 id="h1">explore bubble event</h1>
+    <ul id="ul">
+        <li id="item1">Lorem, ipsum.</li>
+        <li id="item2">Maxime, similique!</li>
+        <li id="item3">Quod, consectetur.</li>
+        <li id="item4">Odit, iure.</li>
+        <li id="item5">Quidem, dolores.</li>
+        <li id="item6">Dolor, obcaecati.</li>
+    </ul>
+    </section>
+    <script>
+        document.getElementById('item2').addEventListener('click', function(event){
+            console.log(' second li clicked');
+            event.stopImmediatePropagation();
+        })
+        document.getElementById('item2').addEventListener('click', function(event){
+            console.log(' second li clicked');
+            
+        })
+        document.getElementById('ul').addEventListener('click', function(){
+            console.log(' second ul clicked');
+        })
+        document.getElementById('h1').addEventListener('click', function(){
+            console.log(' second h1 clicked');
+        })
+        document.getElementById('section').addEventListener('click', function(){
+            console.log(' second section clicked');
+        })
+       
+    </script>
+</body>
+</html>
